@@ -1,0 +1,41 @@
+.icon {
+  
+}
+.footer-icon {
+  i {
+    background: url(../image/btm-bar-sprt.png) no-repeat;
+    background-size: 500px auto;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    &.home {
+      background-position: 0 0;
+    }
+    &.sorts {
+      background-position: -100px 0;
+    }
+    &.cart {
+      background-position: -200px 0;
+    }
+    &.mine {
+      background-position: -300px 0;
+    }
+  }
+  &.active {
+    i {
+      &.home {
+          background-position: 0 -100px;
+      }
+      &.sorts {
+          background-position: -100px -100px;
+      }
+      &.cart {
+          background-position: -200px -100px;
+      }
+      &.mine {
+          background-position: -300px -100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.mywrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 3.5rem;
+  background: url(../../common/image/back.png) center bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  width: 97%;
+  margin-left: 3%;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: .4rem;
+}
+
+.tops {
+  width: 94%;
+  color: #fff;
+  margin-top: .15rem;
+}
+
+.tops span {
+  width: 2rem;
+  height: .6rem;
+  border-radius: .3rem;
+  background: #fff;
+  color: #ff5700;
+  display: block;
+  text-align: center;
+  line-height: .6rem;
+}
+
+footer {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+footer dl {
+  width: 20%;
+  text-align: center;
+}
+
+footer dl .iconfont {
+  font-size: .4rem;
+}
+
+.mydevtop {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ordertop {
+  width: 94%;
+  height: 1rem;
+  display: flex;
+  padding: 0 3%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .4rem;
+  border-bottom: solid 1px #eee;
+}
+
+.ordertop .iconfont {
+  font-size: .4rem;
+  margin-left: .1rem;
+}
+
+.orderbot {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid .23rem #f0f0f0;
+}
+
+.orderbot dl {
+  flex: 1;
+  text-align: center;
+  color: grey;
+  font-size: .4rem;
+}
+
+.orderbot dl .iconfont {
+  font-size: 0.5rem !important;
+  color: #ff5700 !important;
+}
+
+.zichan {
+  width: 97%;
+  height: .8rem;
+  padding-left: 3%;
+  line-height: .8rem;
+  border-bottom: solid 1px #f0f0f0;
+  font-size: .4rem;
+}
+
+.property {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid .23rem #f0f0f0;
+}
+
+.property dl {
+  flex: 1;
+  text-align: center;
+  color: grey;
+  font-size: .4rem;
+}
+
+.property dl dt {
+  color: #36383f;
+  font-weight: 600;
+}
+
+.property dl dd {
+  margin-top: .15rem;
+}

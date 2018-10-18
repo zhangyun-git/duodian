@@ -1,0 +1,40 @@
+.footer-icon i {
+  background: url(../image/btm-bar-sprt.png) no-repeat;
+  background-size: 250px auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-icon i.home {
+  background-position: 0 0;
+}
+
+.footer-icon i.sorts {
+  background-position: -50px 0;
+}
+
+.footer-icon i.cart {
+  background-position: -150px 0;
+}
+
+.footer-icon i.mine {
+  background-position: -200px 0;
+}
+
+.footer-icon.active i.home {
+  background-position: 0 -50px;
+}
+
+.footer-icon.active i.sorts {
+  background-position: -50px -50px;
+}
+
+.footer-icon.active i.cart {
+  background-position: -150px -50px;
+}
+
+.footer-icon.active i.mine {
+  background-position: -200px -50px;
+}

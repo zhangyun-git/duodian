@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top {
+    width: 94%;
+    margin: 0 3%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: .4rem;
+    justify-content: space-between;
+    .iconfont {
+        font-size: .4rem;
+    }
+}
+
+header {
+    width: 100%;
+    height: 1.2rem;
+    align-items: center;
+    display: flex;
+    p {
+        width: 2rem;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 1rem;
+            height: .4rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.swiper-container,
+.swiper-wrapper {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.swiper-containers {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    dl {
+        width: 20%;
+        text-align: center;
+        .iconfont {
+            font-size: .4rem;
+        }
+    }
+}
+
+.dls {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    dl {
+        width: 20%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        dt {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 90%;
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+.discount {
+    width: 100%;
+    img {
+        width: 100%;
+        background: rgb(236, 236, 236);
+    }
+}
+
+.maintitle {
+    width: 100%;
+    background: rgb(236, 236, 236);
+    img {
+        width: 100%;
+    }
+}
+
+.active {
+    color: #ff8143;
+}
+
+.poster {
+    width: 99%;
+    margin: 0 .5%;
+    display: flex;
+    height: 6rem;
+}
+
+.posterleft {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.posterRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.snackstop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 33.3%;
+        height: 4rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.wrapsect {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.wraptop {
+    width: 100%;
+    height: 1.2rem;
+    display: flex;
+    ul {
+        display: flex;
+    }
+    li {
+        width: 2.5rem;
+        height: 1.15rem;
+        line-height: 1.15rem;
+        text-align: center;
+        font-size: .4rem;
+    }
+}
+
+.dismain {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.dismainleft {
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    .betters {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        p {
+            width: 100%;
+            height: 1.5rem;
+            text-align: center;
+            line-height: 1.5rem;
+            font-size: .35rem;
+            background-color: #f6f6f6;
+            color: #999;
+        }
+    }
+}
+
+.dismainleft::-webkit-scrollbar {
+    display: none;
+}
+
+.dismainright {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    ol {
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        /* 内容会被裁剪，会以滚动条显示 */
+        overflow-x: auto;
+        overflow-y: hidden;
+        /* 超出内容不可见 */
+        flex-wrap: nowrap;
+        border-bottom: solid 1px #ccc;
+        li {
+            width: 2rem;
+            text-align: center;
+            height: 100%;
+            line-height: 1rem;
+            color: #999;
+            flex-shrink: 0;
+            font-size: .35rem;
+        }
+    }
+    ol::-webkit-scrollbar {
+        background-color: transparent;
+    }
+}
+
+.dismaindet {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    dl {
+        width: 96%;
+        height: 2.5rem;
+        padding: 0 2%;
+        display: flex;
+        margin: .2rem 0;
+        dt {
+            width: 35%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+        dd {
+            flex: 1;
+            height: 100%;
+            margin-top: .2rem;
+            p {
+                width: 100%;
+                line-height: .5rem;
+                font-size: .4rem;
+            }
+            .mainbottom {
+                width: 100%;
+                margin-top: .5rem;
+                display: flex;
+                justify-content: space-between;
+                span:nth-child(1) {
+                    font-weight: bold;
+                    font-size: .45rem;
+                }
+                .bottomrights {
+                    color: #fff;
+                    width: .8rem;
+                    height: .45rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: .1rem;
+                    border-radius: .08rem;
+                    background: #ff712b;
+                    margin-right: .5rem;
+                    font-size: .45rem;
+                }
+            }
+        }
+    }
+}
+
+.newadwrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.newinfo{
+    width: 100%;
+    flex:1;
+    background: #f6f6f6;
+    position: relative;
+    ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: .3rem;
+        background: #fff;
+        li{
+            width: 100%;
+            height: 1.2rem;
+            display: flex;
+            align-items: center;
+            font-size: .4rem;
+            border-top: solid 1px #f0f0f0;
+            span{
+                color: grey;
+                padding:0 .6rem;
+            }
+            input{
+                flex: 1;
+                border:0;
+                height: .8rem;
+                font-size: .4rem;
+                outline: none;
+            }
+            b{
+                font-weight: 100;
+                padding:0 .6rem;
+            }
+            p{
+                flex:1;
+                height: .8rem;
+                margin-right: .1rem;
+                border-left: solid 1px #f0f0f0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: .8rem;
+            }
+        }
+    }
+    button{
+        width: 100%;
+        height: 1.2rem;
+        text-align: center;
+        line-height: 1.2rem;
+        color: #ff712b;
+        font-size: .5rem;
+        border:0;
+        background: #fff;
+        margin-top: .2rem;
+        outline: none;
+    }
+}
+
+.active {
+    border-bottom: solid 1px red;
+}
+
+.actives {
+    background: #fff!important;
+    color: black!important;
+    font-weight: bold;
+}
+
+.router-link-active {
+    color: orange;
+}

@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.seawrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  line-height: 1.2rem;
+  font-size: .4rem;
+}
+
+header .iconfont {
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  color: #fff;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: .15rem;
+  left: .1rem;
+  text-align: center;
+  font-size: .4rem;
+  line-height: .7rem;
+  font-weight: 100;
+}
+
+section {
+  width: 100%;
+  flex: 1;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchs {
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+  box-shadow: 0px 5px 0px #eee;
+  align-items: center;
+}
+
+.searchs input {
+  width: 80%;
+  height: 1rem;
+  border: 0;
+  font-size: .4rem;
+  outline: none;
+  margin-left: 2%;
+}
+
+.searchs button {
+  width: 16%;
+  height: .8rem;
+  background-color: #c8cccd;
+  color: #fff;
+  border-radius: 4px;
+  font-size: .4rem;
+  outline: none;
+  border: 0;
+}
+
+.mark {
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: #f6f6f6;
+  border-bottom: solid 1px #f0f0f0;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 10rem;
+  flex-shrink: 0;
+  z-index: 999;
+}
+
+.mark p {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-bottom: solid 1px #ccc;
+}
+
+.mark p span {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.dingwei {
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.dingwei .iconfont {
+  margin: 0 .3rem;
+  font-size: .4rem;
+}
+
+.dong {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dong dl {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.dong dl img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.dong dl dd {
+  color: #979797;
+  font-size: 25px;
+}
+
+.addre {
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #ff712b;
+  font-size: .4rem;
+}
+
+.dizhis {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: 1.5rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dizhis p {
+  width: 100%;
+  height: .8rem;
+  line-height: .8rem;
+  border-bottom: solid 1px #eee;
+}
+
+.dizhis input {
+  width: 80%;
+  height: 1rem;
+  font-size: .45rem;
+  outline: none;
+  margin-left: 1%;
+}
+
+.dizhis button {
+  width: 16%;
+  height: .8rem;
+  background-color: #c8cccd;
+  color: #fff;
+  border-radius: 4px;
+  font-size: .4rem;
+  outline: none;
+  border: 0;
+}

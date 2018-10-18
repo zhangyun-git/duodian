@@ -1,0 +1,149 @@
+$base-color: #FF712B;
+$link-default-color: #333;
+$min-title-color: #888;
+$default-color: grey;
+
+
+// font color
+$linkColor: #71777c;
+$descColor: #B2B2B2;
+$warnColor: #E64340;
+$nickNameColor: #576B95;
+$textColor: #888;
+$titleColor: #000;
+
+// border
+$borderColor: rgba(178,186,194,.6);
+
+// background
+$bg: #f6f6f6;
+$infoBg: #c1c1c1;
+$warningBg: #ff712b;
+$defaultBg: #ff712b;
+
+// content
+$baseWidth: 960px;
+
+//font-size
+$fontSize: 28px;
+$fontSize-xxl: 32px;
+$fontSize-s: 12px;
+$fontSize-m: 12px;
+$fontSize-xs: 28px;
+
+@mixin wh($width, $hiehgt) {
+  width: $width;
+  height: $hiehgt;
+}
+
+@mixin border1px ($color) {
+  position: relative;
+  // border-bottom: 1px solid #000;
+  &::after {
+    content: '';
+    width: 200%;
+    height: 1px;
+    transform-origin: left top;
+    transform: scale(0.5);
+    background: $color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@mixin px2rem ($name, $px) {
+  #{name}: $px / 100 * 1rem
+}
+
+@mixin clearbox () {}
+
+//超出一行文本省略
+@mixin overflow() {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行超出文本省略
+@mixin overflow-more($num) {
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$num;
+  display: -moz-box; 
+  -moz-line-clamp: $num !important;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+}
+
+// 绝对居中
+@mixin center($width, $height) {
+  position: absolute;
+  left:50%;
+  top:50%;
+  width:$width;
+  height:$height;
+  margin:(-$height / 2) 0 0 (-$width / 2);
+}
+
+@mixin childCenter() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// 绝对居中
+@mixin fullMask() {
+  position: fixed;
+  top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+/*
+ * 三角形
+ * arrow($width, $height, $bg, $direction)
+*/
+@mixin arrow($width, $height, $bg, $direction) {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-style: solid;
+	@if $direction == t {
+		border-width: 0 $width / 2 + px $height + px $width / 2 + px;
+		border-color: transparent transparent $bg transparent;
+	}
+	@else if $direction == b {
+		border-width: $height + px $width / 2 + px 0 $width / 2 + px;
+		border-color: $bg transparent transparent transparent;
+	}
+	@else if $direction == r {
+		border-width: $height / 2 + px 0 $height / 2 + px $width + px;
+		border-color: transparent transparent transparent $bg;
+	}
+	@else if $direction == l {
+		border-width: $height / 2 + px $width + px $height / 2 + px 0;
+		border-color: transparent $bg transparent transparent;
+	}
+	@else if $direction == tl {
+		border-width: $height + px $width + px 0 0;
+		border-color: $bg transparent transparent transparent;
+	}
+	@else if $direction == tr {
+		border-width: 0 $width + px $height + px 0;
+		border-color: transparent $bg transparent transparent;
+	}
+	@else if $direction == bl {
+		border-width: 0 0 $height + px $width + px;
+		border-color: transparent transparent $bg transparent;
+	}
+	@else if $direction == br {
+		border-width: $width + px 0 0 $height + px;
+		border-color: transparent transparent transparent $bg;
+	}
+}
